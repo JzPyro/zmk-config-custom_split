@@ -1,0 +1,6 @@
+if SHIELD_CUSTOMSPLIT
+
+config ZMK_KEBOARD_NAME
+    default "custom_split"
+
+endif
