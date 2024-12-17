@@ -22,7 +22,7 @@
    &kp Q &kp W        &kp E      &kp R   &kp T        &kp Y   &kp U     &kp I     &kp O   &kp P   
    &kp A &kp S        &kp D      &kp F   &kp G        &kp H   &kp J     &kp K     &kp L   &kp SEMI
    &kp Z &kp X        &kp C      &kp V   &kp B        &kp N   &kp M     &kp COMMA &kp DOT &kp FSLH
-   &SQT  &mt TAB CAPS &kp LSHIFT &kp RET &kp BSPC     &kp DOT &KP SPACE &to 1     &kp DEL &kp RCTRL
+   &kp SQT  &mt TAB CAPS &kp LSHIFT &kp RET &kp BSPC     &kp DOT &kp SPACE &to 1     &kp DEL &kp RCTRL
                         >;
                 };
                 lower_layer {
@@ -46,10 +46,10 @@
 // | F6  | F7  | F8  | F9  | F10 |   |BN_UP|BN_DN|KB_UP|KB_DN|BKLTT|
 // | F11 | F12 | LY0 | FN  |     |   |     |     |     |BTCLR|BTLDR|
                         bindings = <
-   &kp ESC &kp INS &kp HOME &kp PG_UP &KP PG_DN   &kp PSCRN    &kp PAUSE_BREAK &kp C_VOL_UP &kp C_VOL_DN &kp C_MUTE 
+   &kp ESC &kp INS &kp HOME &kp PG_UP &kp PG_DN   &kp PSCRN    &kp PAUSE_BREAK &kp C_VOL_UP &kp C_VOL_DN &kp C_MUTE 
    &kp F1  &kp F2  &kp F3   &kp F4    &kp F5      &bt BT_SEL 0 &bt BT_SEL 1    &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
    &kp F6  &kp F7  &kp F8   &kp F9    &kp F10     &kp C_BRI_UP &kp C_BRI_DN    &bl BL_DEC   &bl BL_INC   &bl BL_TOG 
-   &kp F11 &kp F12 &to 0    &kp RGUI  &trans      &trans       &trans          &trans       &bt BT_CLR      &bootloader
+   &kp F11 &kp F12 &to 0    &kp RGUI  &trans      &trans       &trans          &trans       &bt BT_CLR   &bootloader
                         >;
                 };
         };
