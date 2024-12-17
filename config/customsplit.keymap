@@ -44,12 +44,12 @@
 // | ESC | INS |HOME |PG UP|PG DN|   |PRTSC|Pause|VOLUP|VOLDN| MUTE|
 // | F1  | F2  | F3  | F4  | F5  |   | BT1 | BT2 | BT3 | BT4 | BT5 |
 // | F6  | F7  | F8  | F9  | F10 |   |BN_UP|BN_DN|KB_UP|KB_DN|BKLTT|
-// | F11 | F12 | LY0 | FN  |     |   |     |     |     |     |     |
+// | F11 | F12 | LY0 | FN  |     |   |     |     |     |BTCLR|BTLDR|
                         bindings = <
    &kp ESC &kp INS &kp HOME &kp PG_UP &KP PG_DN   &kp PSCRN    &kp PAUSE_BREAK &kp C_VOL_UP &kp C_VOL_DN &kp C_MUTE 
    &kp F1  &kp F2  &kp F3   &kp F4    &kp F5      &bt BT_SEL 0 &bt BT_SEL 1    &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
    &kp F6  &kp F7  &kp F8   &kp F9    &kp F10     &kp C_BRI_UP &kp C_BRI_DN    &bl BL_DEC   &bl BL_INC   &bl BL_TOG 
-   &kp F11 &kp F12 &to 0    &kp RGUI  &trans      &trans       &trans          &trans       &trans       &trans
+   &kp F11 &kp F12 &to 0    &kp RGUI  &trans      &trans       &trans          &trans       &bt BT_CLR      &bootloader
                         >;
                 };
         };
