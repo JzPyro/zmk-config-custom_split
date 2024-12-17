@@ -1,6 +1,6 @@
 if SHIELD_CUSTOMSPLIT
 
 config ZMK_KEBOARD_NAME
-    default "customsplit"
+    default "CustomCorne"
 
 endif
