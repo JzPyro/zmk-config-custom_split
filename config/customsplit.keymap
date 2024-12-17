@@ -48,7 +48,7 @@
                         bindings = <
    &kp ESC &kp INS &kp HOME &kp PG_UP &kp PG_DN   &kp PSCRN    &kp PAUSE_BREAK &kp C_VOL_UP &kp C_VOL_DN &kp C_MUTE 
    &kp F1  &kp F2  &kp F3   &kp F4    &kp F5      &bt BT_SEL 0 &bt BT_SEL 1    &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
-   &kp F6  &kp F7  &kp F8   &kp F9    &kp F10     &kp C_BRI_UP &kp C_BRI_DN    &bl BL_DEC   &bl BL_INC   &bl BL_TOG 
+   &kp F6  &kp F7  &kp F8   &kp F9    &kp F10     &kp C_BRI_UP &kp C_BRI_DN    &trans       &trans       &trans 
    &kp F11 &kp F12 &to 0    &kp RGUI  &trans      &trans       &trans          &trans       &bt BT_CLR   &bootloader
                         >;
                 };
