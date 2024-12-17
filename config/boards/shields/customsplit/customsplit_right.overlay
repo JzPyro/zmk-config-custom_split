@@ -9,5 +9,5 @@
                 <&gpio0 17 GPIO_ACTIVE_HIGH>,
                 <&gpio0 15 GPIO_ACTIVE_HIGH>,
                 <&gpio1 11 GPIO_ACTIVE_HIGH>,
-                <&gpio0 26 GPIO_ACTIVE_HIGH>,;
+                <&gpio0 26 GPIO_ACTIVE_HIGH>;
 };
