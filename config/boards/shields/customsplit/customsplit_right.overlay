@@ -1,6 +1,6 @@
 #include "customsplit.dtsi"
 
-&five_column_transform {
+&default_transform {
     col-offset = <5>;
 };
 
