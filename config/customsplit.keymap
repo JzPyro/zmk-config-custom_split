@@ -35,7 +35,7 @@
    &kp GRAVE &kp AMPS   &kp STAR  &kp UNDER &mt LBKT RBKT    &kp KP_SLASH        &kp KP_N7 &kp KP_N8 &kp KP_N9  &kp KP_MINUS
    &kp TILDE &kp DDLR   &kp PRCNT &kp CARET &mt LBRC RBRC    &kp KP_MULTIPLY     &kp KP_N4 &kp KP_N5 &kp KP_N6  &kp KP_PLUS
    &kp FSLH  &kp EXCL   &kp AT    &kp HASH  &mt LPAR RPAR    &mt KP_LPAR KP_RPAR &kp KP_N1 &kp KP_N2 &kp KP_N3  &kp KP_ENTER
-   &kp LCTRL &kp LshIFT &to 0     &kp RET   &kp BSPC         &kp RET             &kp KP_N0 &to 2     &kp KP_DOT &kp LGUI
+   &kp LCTRL &kp LSHIFT &to 0     &kp RET   &kp BSPC         &kp RET             &kp KP_N0 &to 2     &kp KP_DOT &kp LGUI
                         >;
                 };
 
