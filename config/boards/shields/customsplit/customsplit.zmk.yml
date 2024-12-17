@@ -1,0 +1,13 @@
+file_format: "1"
+id: customsplit
+name: Custom Corne
+type: shield
+url: https://github.com/jzpyro/zmk-config-custom_split
+exposes: [i2c_oled]
+features:
+  - keys
+  - display
+  - studio
+siblings:
+  - customsplit_left
+  - customsplit_right

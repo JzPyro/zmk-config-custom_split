@@ -1,0 +1,56 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+
+/ {
+        keymap {
+                compatible = "zmk,keymap";
+
+                default_layer {
+// -----------------------------------------------------------------------------------------
+// |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |
+// |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |
+// |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |
+// |  '  | TAB |SHIFT| ENT |BSPC |   |  .  | SPC  | LY1 | ALT | CTL |
+                        bindings = <
+   &kp Q &kp W        &kp E      &kp R   &kp T        &kp Y   &kp U     &kp I     &kp O   &kp P   
+   &kp A &kp S        &kp D      &kp F   &kp G        &kp H   &kp J     &kp K     &kp L   &kp SEMI
+   &kp Z &kp X        &kp C      &kp V   &kp B        &kp N   &kp M     &kp COMMA &kp DOT &kp FSLH
+   &SQT  &mt TAB CAPS &kp LSHIFT &kp RET &kp BSPC     &kp DOT &KP SPACE &to 1     &kp DEL &kp RCTRL
+                        >;
+                };
+                lower_layer {
+// -----------------------------------------------------------------------------------------
+// |  `  |  &  |  *  |  _  |  [] |   |  \  |  7  |  8  |  9  |  -  |
+// |  ~  |  $  |  %  |  ^  |  {} |   |  *  |  4  |  5  |  6  |  +  |
+// |  /  |  !  |  @  |  #  |  () |   |  () |  1  |  2  |  3  | RET |
+// | DEL |SHIFT| LY0 | RET | BCSP|   | ENT |  0  | LY2 |  .  | GUI | 
+                        bindings = <
+   &kp GRAVE &kp AMPS   &kp STAR  &kp UNDER &mt LBKT RBKT    &kp KP_SLASH        &kp KP_N7 &kp KP_N8 &kp KP_N9  &kp KP_MINUS
+   &kp TILDE &kp DDLR   &kp PRCNT &kp CARET &mt LBRC RBRC    &kp KP_MULTIPLY     &kp KP_N4 &kp KP_N5 &kp KP_N6  &kp KP_PLUS
+   &kp FSLH  &kp EXCL   &kp AT    &kp HASH  &mt LPAR RPAR    &mt KP_LPAR KP_RPAR &kp KP_N1 &kp KP_N2 &kp KP_N3  &kp KP_ENTER
+   &kp LCTRL &kp LshIFT &to 0     &kp RET   &kp BSPC         &kp RET             &kp KP_N0 &to 2     &kp KP_DOT &kp LGUI
+                        >;
+                };
+
+                raise_layer {
+// -----------------------------------------------------------------------------------------
+// | ESC | INS |HOME |PG UP|PG DN|   |PRTSC|Pause|VOLUP|VOLDN| MUTE|
+// | F1  | F2  | F3  | F4  | F5  |   | BT1 | BT2 | BT3 | BT4 | BT5 |
+// | F6  | F7  | F8  | F9  | F10 |   |BN_UP|BN_DN|KB_UP|KB_DN|BKLTT|
+// | F11 | F12 | LY0 | FN  |     |   |     |     |     |     |     |
+                        bindings = <
+   &kp ESC &kp INS &kp HOME &kp PG_UP &KP PG_DN   &kp PSCRN    &kp PAUSE_BREAK &kp C_VOL_UP &kp C_VOL_DN &kp C_MUTE 
+   &kp F1  &kp F2  &kp F3   &kp F4    &kp F5      &bt BT_SEL 0 &bt BT_SEL 1    &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
+   &kp F6  &kp F7  &kp F8   &kp F9    &kp F10     &kp C_BRI_UP &kp C_BRI_DN    &bl BL_DEC   &bl BL_INC   &bl BL_TOG 
+   &kp F11 &kp F12 &to 0    &kp RGUI  &trans      &trans       &trans          &trans       &trans       &trans
+                        >;
+                };
+        };
+};
