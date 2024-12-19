@@ -20,7 +20,7 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: customsplit_left
+    shield: customsplit_left 
   - board: nice_nano_v2
-    shield: customsplit_right
+    shield: customsplit_right nice_view_adapter nice_view
 
