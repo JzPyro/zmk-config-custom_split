@@ -3,10 +3,12 @@ id: customsplit
 name: Custom Corne
 type: shield
 url: https://github.com/jzpyro/zmk-config-custom_split
+requires: [pro_micro]
 exposes: [i2c_oled]
 features:
   - keys
   - display
+  - underglow
   - studio
 siblings:
   - customsplit_left
